@@ -16,7 +16,7 @@ const getAllPropValues = function(arr, prop) {
   for (let i = 0; i < arr.length; i++) {
     if (Object.keys(arr[i]).includes(prop)) {
     //   const curElement = arr[i];
-      rez.push(`${arr[i]}:${arr[prop]}`);
+      rez.push(arr[i][prop]);
     }
   }
   return rez;
